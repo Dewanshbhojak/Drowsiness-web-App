@@ -18,17 +18,6 @@ from twilio.rest import Client
 from flask import session
 
 
-def send_sms_alert(to_number,body="driver is sleeping"):
-    account_sid = 'AC5985132283d60991a934a320b703b4ab'          # Replace with your Twilio SID
-    auth_token = '3854d3e48c5d9cf175520d6e6dbbc438'    # Replace with your Twilio Auth Token
-    client = Client(account_sid, auth_token)
-
-    message = client.messages.create(
-        body=body,
-        from_='+919413726278',   # Your Twilio number
-        to=to_number     # Emergency contact number
-    )
-    print("[INFO] SMS alert sent. SID:", message.sid)
 
 
 def get_driver_location():
@@ -145,8 +134,6 @@ def start1():
                     sleep_count += 1  # ✅ Increment sleep count
                     
                     try:
-                        if 'number' in session:
-                            send_sms_alert("+91"+session['number'])
                         sound.play()
                     except:
                         pass
