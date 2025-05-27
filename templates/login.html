@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="static/css/login.css" />
+  <title>Login Page</title>
+</head>
+<body>
+  <div class="container">
+    <span style="--clr:#eeff00;"></span>
+    <span style="--clr:#00ffdd;"></span>
+    <span style="--clr:#e900d5;"></span>
+
+    <form class="form-container" action="/" method="POST">
+      <h2>Login Form</h2>
+      
+      <div class="input-container">
+        <input type="text" name="username" placeholder="Username" required />
+      </div>
+      
+      <div class="input-container">
+        <input type="password" name="password" placeholder="Password" required />
+      </div>
+      
+      <div class="input-container">
+        <input type="submit" value="Sign In" />
+      </div>
+
+      <p>Don't have an account? <a href="/register">Register</a></p>
+    </form>
+  </div>
+</body>
+</html>

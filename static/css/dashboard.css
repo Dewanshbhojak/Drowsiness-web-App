@@ -1,0 +1,31 @@
+.body{
+     margin: 0;
+      font-family: Arial, sans-serif;
+}
+
+
+
+.container{
+    margin-left: 250px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns:200px 200px ;
+      grid-row: auto auto;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      border-color: #fff;
+      
+
+}
+.details{
+    background-color: #222;
+    width: 200px;
+    height:200px;
+    border-radius:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 10px;
+
+}
